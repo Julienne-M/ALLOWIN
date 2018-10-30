@@ -5,19 +5,18 @@ export class AdresseDataGouv {
   url: string;
   data: any;
 
-  constructor(private http: HttpClient, adresse: string ) {
-    this.url = this.urlBase + adresse;
+
+
+  constructor( private http: HttpClient, markerBonbons: MarkerBonbons ) {
+    this.url = this.urlBase + markerBonbons.api;
     console.log(this.url);
   }
 
-  getLatLon() { 
-    // https://api-adresse.data.gouv.fr/search/?q=11+rue+de+poissy+paris
-
-    // this.http.get(`${this.url}`);
+  getLatLon() {
     this.http.get(`${this.url}`).subscribe((response) => {
-        this.data = response;
-        console.log(this.data);
-       });
+      return this.data = response;
+      console.log(this.data);
+    });
 
     return;
   }
