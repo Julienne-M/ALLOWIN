@@ -7,17 +7,15 @@ import leaflet from 'leaflet';
   templateUrl: 'about.html'
 })
 export class AboutPage {
-  @ViewChild('map') mapContainer = ElementRef;
+  @ViewChild('map') mapContainer: ElementRef;
   map: any;
-
   constructor(public navCtrl: NavController) {
-
   }
-
+  
   ionViewDidEnter() {
     this.loadmap();
   }
-
+  
   loadmap() {
     this.map = leaflet.map('map').fitWorld();
     leaflet.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -36,4 +34,5 @@ export class AboutPage {
       this.map.addLayer(markerGroup);
     })
   }
+
 }
