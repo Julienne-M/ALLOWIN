@@ -1,0 +1,7 @@
+{
+  "name": "allowin",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
