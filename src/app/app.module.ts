@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ChildFormPage } from '../pages/childForm/childForm';
 import { AdultFormPage } from '../pages/adultForm/adultForm';
+import { ParentsFormPage } from '../pages/parentsForm/parentsForm';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     ChildFormPage,
-    AdultFormPage
+    AdultFormPage,
+    ParentsFormPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     ChildFormPage,
-    AdultFormPage
+    AdultFormPage,
+    ParentsFormPage
   ],
   providers: [
     StatusBar,
