@@ -14,9 +14,16 @@ export class MapPage {
 
   }
 
-  ionViewDidEnter() {
-    this.loadmap();
-  }
+  //ionViewDidEnter() {
+    //if(!this.map){
+     // this.loadmap();
+    //}
+    
+  //}
+
+  ionViewDidLoad() {
+      this.loadmap();
+    }
 
   loadmap() {
     this.map = leaflet.map('map').fitWorld();
