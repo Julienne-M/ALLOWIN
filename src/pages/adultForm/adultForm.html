@@ -4,25 +4,26 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-    <form (ngSubmit)="getPosition()">
-        <ion-list>
+<ion-content class="background-img">
+    <form (ngSubmit)="getPosition()" class="adult">
+        <ion-list class="form">
             <ion-item>
                 <ion-label floating>Pseudo</ion-label>
-                <ion-input type="text" [(ngModel)]="markerBonbons.pseudo" name="pseudo"></ion-input>
+                <ion-input type="text" [(ngModel)]="pseudo" name="pseudo"></ion-input>
             </ion-item>
             <ion-item>
                 <ion-label floating>Adresse</ion-label>
-                <ion-input type="text" [(ngModel)]="markerBonbons.adresse" name="adresse"></ion-input>
+                <ion-input type="text" [(ngModel)]="adresse" name="adresse"></ion-input>
             </ion-item>
+            <div padding>
+                <button ion-button type="submit" round color="dark">Entrer</button>
+            </div>
         </ion-list>
-        <div padding>
-            <button ion-button type="submit" round>Entrer</button>
-        </div>
+        
     </form>
 </ion-content>
 
-<ion-footer padding>
+<ion-footer>
     <ion-toolbar>
         <p>A TRICK or a TREAT ?</p>
     </ion-toolbar>

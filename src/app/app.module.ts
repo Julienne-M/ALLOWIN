@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+
 import { AdresseDataGouv } from '../services/adressedatagouv';
 import { AboutPage } from '../pages/about/about';
 import { MapPage } from '../pages/map/map';
@@ -14,6 +15,7 @@ import { ParentsFormPage } from '../pages/parentsForm/parentsForm';
 import { HttpClientModule } from '@angular/common/http';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { FormsModule }   from '@angular/forms';
 
 
 @NgModule({
@@ -30,6 +32,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

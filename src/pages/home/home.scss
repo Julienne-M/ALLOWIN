@@ -1,36 +1,33 @@
 page-home {
+    .background-img {
+        background-image: url('../../assets/imgs/owl.png');
+        // background: url('../../img/getstart.png');
+        background-repeat: no-repeat;
+        // background-size: cover;
+        background-position: center;
+        // object-fit: cover;
+        // opacity: 0.5;
+        background-color: antiquewhite;
+        text-align: center;
+    }
     
+    .title {
+        color: black;
+        // opacity: 1;
+        // background-color: white;
+        box-sizing: border-box;
+    
+        // background-color: beige;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .homeForm {
+        opacity: 0.8;
+        background-color: antiquewhite;
+    }
+    
+    ion-footer {
+        text-align: center;
+    }
 }
-
-.background-img {
-    background-image: url('../../assets/imgs/owl.png');
-    // background: url('../../img/getstart.png');
-    background-repeat: no-repeat;
-    // background-size: cover;
-    background-position: center;
-    // object-fit: cover;
-    // opacity: 0.5;
-    background-color: bisque;
-    text-align: center;
-}
-
-.title {
-    color: black;
-    // opacity: 1;
-    // background-color: white;
-    box-sizing: border-box;
-
-    // background-color: beige;
-    text-align: center;
-    justify-content: center;
-}
-
-.homeForm {
-    opacity: 0.8;
-    background-color: beige;
-}
-
-// button {
-//     font-style: bold;
-//     font-size: 16px;
-// }
