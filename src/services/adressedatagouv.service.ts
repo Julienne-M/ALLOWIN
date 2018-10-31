@@ -12,8 +12,9 @@ export class AdresseDataGouv {
 
   getLatLon() {
     this.http.get(`${this.url}`).subscribe((response) => {
-      return this.data = response;
+      this.data = response;
       console.log(this.data);
+      return this.data;
     });
 
     return;
