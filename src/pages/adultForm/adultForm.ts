@@ -9,25 +9,33 @@ import { AdresseDataGouv } from '../../services/adressedatagouv';
 })
 export class AdultFormPage {
     data : any;
-    allMarkerBonbons: [MarkerBonbons];
+    allMarkerBonbons = [];
     markerBonbons: MarkerBonbons = {
         pseudo: 'Coco',
-        adresse: '11 rue de Poissy Paris',
+        adresse: '9 grande rue 28700 Saint-Léger-des-aubées',
         position: { lat: 0, lon: 0 },
         api: '11+rue+de+Poissy+Paris'
-        };
+        };   
 
     constructor ( public navCtrl: NavController, public adresseDataGouv: AdresseDataGouv ) {
                
     }
 
     getPosition() {
+        this.markerBonbons.api = this.markerBonbons.adresse.replace(/\s/g,'+');
+        console.log(this.markerBonbons.api);
         this.adresseDataGouv.getLatLon(this.markerBonbons.api).subscribe((response) => {
             this.data = response;
-            this.markerBonbons.position.lat = 0;
-            this.markerBonbons.position.lon = 0;
+            console.log(this.data);
+            this.markerBonbons.position.lon = this.data.features[0].geometry.coordinates[0];
+            this.markerBonbons.position.lat = this.data.features[0].geometry.coordinates[1];
+            console.log(this.markerBonbons);
+            console.log(this.allMarkerBonbons);
+
             this.allMarkerBonbons.push(this.markerBonbons);
+            console.log(this.allMarkerBonbons);
         });
     }
+    
  
 }

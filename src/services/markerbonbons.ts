@@ -7,9 +7,7 @@ export class MarkerBonbons {
   position: { lat: number, lon: number };
   api: string;
 
-  constructor(pseudo: string, adresse: string) {
-    this.pseudo = pseudo;
-    this.adresse = adresse;
-    this.api = adresse.split('+').toString();
+  constructor() {
+    
   }
 }

@@ -5,23 +5,21 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-list>
-        <ion-item>
-            <ion-label floating>Pseudo</ion-label>
-            <ion-input type="text"></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label floating>Adresse</ion-label>
-            <ion-input type="text"></ion-input>
-        </ion-item>
-        <!-- <ion-item>
-            <ion-label floating>Mot de passe</ion-label>
-            <ion-input type="password"></ion-input>
-        </ion-item> -->
-    </ion-list>
-    <div padding>
-        <button ion-button round>Entrer</button>
-    </div>
+    <form (ngSubmit)="getPosition()">
+        <ion-list>
+            <ion-item>
+                <ion-label floating>Pseudo</ion-label>
+                <ion-input type="text" [(ngModel)]="markerBonbons.pseudo" name="pseudo"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Adresse</ion-label>
+                <ion-input type="text" [(ngModel)]="markerBonbons.adresse" name="adresse"></ion-input>
+            </ion-item>
+        </ion-list>
+        <div padding>
+            <button ion-button type="submit" round>Entrer</button>
+        </div>
+    </form>
 </ion-content>
 
 <ion-footer padding>
