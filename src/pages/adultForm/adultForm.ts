@@ -9,14 +9,14 @@ import { AdresseDataGouv } from '../../services/adressedatagouv';
 })
 export class AdultFormPage {
     data : any;
-    allMarkerBonbons = [];
+    public allMarkerBonbons = [];
     pseudo: 'Coco';
     adresse: '9 grande rue 28700 Saint-Léger-des-aubées';
     position = { lat: 0, lon: 0 };
     api: any;
 
     constructor ( public navCtrl: NavController, public adresseDataGouv: AdresseDataGouv ) {
-               
+ 
     }
 
     getPosition() {

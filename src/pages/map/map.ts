@@ -10,7 +10,7 @@ export class MapPage {
   @ViewChild('map') mapContainer: ElementRef;
   map: any;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController ) {
 
   }
 
@@ -37,9 +37,17 @@ export class MapPage {
       let markerGroup = leaflet.featureGroup();
       let marker: any = leaflet.marker([e.latitude, e.longitude]).on('click', () => {
         alert('Pseudo est là !');
-      })
+      });
       markerGroup.addLayer(marker);
       this.map.addLayer(markerGroup);
+//      console.log(this.allMarkerBonbons);
+      let markerGroup1 = leaflet.featureGroup();
+      let marker1: any = leaflet.marker([48.850564, 2.350188]).on('click', () => {
+        alert('ici il y a des bonbons !');
+      });
+      markerGroup1.addLayer(marker1);
+      this.map.addLayer(markerGroup1);
+
     })
   }
 }
