@@ -1,4 +1,4 @@
-import { AdresseDataGouv } from './adressedatagouv.service';
+// import { AdresseDataGouv } from './adressedatagouv.service';
 
 // class of people who have candies
 export class MarkerBonbons {
@@ -13,6 +13,3 @@ export class MarkerBonbons {
     this.api = adresse.split('+').toString();
   }
 }
-  
-
-

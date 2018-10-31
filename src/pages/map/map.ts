@@ -7,19 +7,18 @@ import leaflet from 'leaflet';
   templateUrl: 'map.html'
 })
 export class MapPage {
-  @ViewChild('map') mapContainer = ElementRef;
+  @ViewChild('map') mapContainer: ElementRef;
   map: any;
 
   constructor(public navCtrl: NavController) {
 
   }
 
-  //ionViewDidEnter() {
-    //if(!this.map){
-     // this.loadmap();
-    //}
-    
-  //}
+//  ionViewDidEnter() {
+//    if(!this.map){
+//      this.loadmap();
+//    }  
+//  }
 
   ionViewDidLoad() {
       this.loadmap();
