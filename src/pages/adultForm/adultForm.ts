@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { AdresseDataGouv, MarkerBonbons } from '../../services/marker'
+import { AdresseDataGouv } from '../../services/adressedatagouv.service';
+import { MarkerBonbons } from '../../services/markerbonbons';
 
 @Component({
     selector: 'page-adultForm',
@@ -7,7 +8,4 @@ import { AdresseDataGouv, MarkerBonbons } from '../../services/marker'
 })
 export class AdultFormPage {
 
-    constructor(private apiData : AdresseDataGouv ) {
-
-    }
 }
