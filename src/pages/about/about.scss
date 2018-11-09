@@ -1,3 +1,28 @@
 page-about {
+    .background-img {
+        background-image: url('../../assets/imgs/owl.png');
+        // background: url('../../img/getstart.png');
+        background-repeat: no-repeat;
+        // background-size: cover;
+        background-position: center;
+        // object-fit: cover;
+        // opacity: 0.5;
+        background-color: antiquewhite;
+        text-align: center;
+    }
+    
+    .about {
+        opacity: 0.9;
+        background-color: antiquewhite;
+    }
+    
+    ion-footer {
+        text-align: center;
+    }
 
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
+

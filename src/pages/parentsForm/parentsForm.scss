@@ -1,6 +1,6 @@
-page-home {
+page-parentsForm {
     .background-img {
-        background-image: url('../../assets/imgs/owl.png');
+        background-image: url('../../assets/imgs/pumpkin.png');
         // background: url('../../img/getstart.png');
         background-repeat: no-repeat;
         // background-size: cover;
@@ -11,7 +11,7 @@ page-home {
         text-align: center;
     }
     
-    .title {
+    .form {
         color: black;
         // opacity: 1;
         // background-color: white;
@@ -22,7 +22,8 @@ page-home {
         justify-content: center;
     }
     
-    .homeForm {
+    .parent {
+        color: black;
         opacity: 0.8;
         background-color: antiquewhite;
     }
